@@ -2,27 +2,27 @@
 
 A JavaScript solution that processes a dictionary of dates and their corresponding integer values, transforming them into a weekly summary while intelligently filling in missing days.
 
-Problem Description
+**Problem Description**
 
 Given a dictionary D where:
 
-Key: Date string in format YYYY-MM-DD
+**Key**: Date string in format YYYY-MM-DD
 
-Value: Integer representing some data for that date
+**Value**: Integer representing some data for that date
 
 The function returns a new dictionary where:
 
-Key: Day name (Mon, Tue, Wed, Thu, Fri, Sat, Sun)
+**Key**: Day name (Mon, Tue, Wed, Thu, Fri, Sat, Sun)
 
-Value: Sum of all values that occurred on that day of the week
+**Value**: Sum of all values that occurred on that day of the week
 
-Special Feature: Missing Day Interpolation
+**Special Feature: Missing Day Interpolation**
 
 If the input dictionary doesn't have data for certain days between consecutive dates, the algorithm fills those missing days with the mean (average) of the previous and next day's values.
 
 Examples
 
-Example 1: Consecutive Days
+**Example 1**: Consecutive Days
 
 javascriptInput = {
 
@@ -62,7 +62,7 @@ Output = {
     
 }
 
-Example 2: Missing Days (Gap Filling)
+**Example 2**: Missing Days (Gap Filling)
 
 javascriptInput = {
 
@@ -99,19 +99,17 @@ Output = {
 }
 
 
-Constraints
+**Constraints**
 
-Date range: 1970-01-01 to 2100-01-01
+**Date range**: 1970-01-01 to 2100-01-01
 
-Value range: -1,000,000 to 1,000,000
+**Value range**: -1,000,000 to 1,000,000
 
 Input guaranteed to have at least Monday and Sunday data
 
-Running Tests
+**Running Tests**
 
-The solution includes comprehensive unit tests. Simply run:
-
-javascriptnode solution.js
+The solution includes comprehensive unit tests. Simply run: javascriptnode solution.js
 
 This will execute all test cases and display the results.
 
